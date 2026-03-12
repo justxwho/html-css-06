@@ -26,6 +26,7 @@ body {
 }
 
 .section-desc {
+    margin-top: 24px;
     color: #656689;
     font-family: Poppins;
     font-size: 1.6rem;
@@ -328,12 +329,11 @@ input, textarea, select, button {
 
 .about__heading {
     margin-top: 15px;
-    width: 446px;
 }
 
+.about__heading,
 .about__desc {
-    margin-top: 24px;
-    width: 430px;
+    width: 444px;
 }
 
 .about__checklist {
@@ -482,4 +482,210 @@ input, textarea, select, button {
     position: absolute;
     top: 13px;
     right: 150px;
+}
+
+.about__desc-bottom {
+    width: 511px;
+    margin-bottom: 50px;
+}
+
+.tab__list {
+    position: relative;
+    display: inline-flex;
+    column-gap: 56px;
+}
+
+.tab__list::after,
+.tab__item--active::after,
+.tab__content-more::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: #FF5B2E;
+    border-radius: 1px;
+    opacity: 0.07;
+}
+
+.tab__item--active::after {
+    width: 95px;
+    opacity: 1;
+}
+
+.tab__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 12px;
+    padding-bottom: 12px;
+    cursor: pointer;
+}
+
+.tab__icon {
+    width: 20px;
+}
+
+.tab__title {
+    color: #48496A;
+    font-family: Sora;
+    font-size: 1,8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.tab__contents {
+    padding-top: 36px;
+}
+
+.tab__content-item {
+    display: none;
+}
+
+.tab__content-item--active {
+    display: block;
+}
+
+.tab__content-desc {
+    width: 391px;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.tab__content-more {
+    position: relative;
+    display: inline-block;
+    margin-top: 32px;
+    padding-bottom: 5px;
+    color: #FF5D31;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;  
+}
+
+.tab__content-more::after {
+    width: 86px;
+    opacity: 1;
+}
+
+/* Services */
+.service {
+    margin-top: 185px;
+    padding-top: 68px;
+    padding-bottom: 100px;
+    background: #FFF6ED;
+}
+
+.service__label {
+    color: #5E6085;
+    text-align: center;
+    font-family: Sora;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.service__heading {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.service__body {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 70px;
+}
+
+.service__card {
+    width: 295px;
+    padding: 30px 22px 30px 28px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #FFF;
+}
+
+.service-item__heading {
+    position: relative;
+    padding-left: 22px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.service-item__heading::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 22px;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+}
+
+.service-item__desc {
+    margin-top: 18px;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.service-item__more {
+    position: relative;
+    display: inline-block;
+    margin-top: 24px;
+    color: #34396A;
+    font-family: Sora;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.service-item__more::after {
+    position: absolute;
+    content: url(../icon/arrowUpRight.svg);
+    right: -20px;
+}
+
+.service__img-wrap {
+    position: relative;
+}
+
+.service__img-wrap::after {
+    position: absolute;
+    inset: auto 0 0 0;
+    content: "";
+    width: 410px;
+    height: 350px;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #9DF1FB 0%, #73D0DB 108.14%);
+    z-index: -1;
+}
+
+.service__btn {
+    margin-top: 45px;
+    width: 214px;
+    background: transparent;
+    color: var(--primary-color);
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    border-radius: 31px;
+    border: 1px solid #FF5B2E;
+}
+
+.service__btn:hover {
+    background: var(--primary-color);
+    color: #F2F2F2;
 }
