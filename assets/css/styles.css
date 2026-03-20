@@ -841,3 +841,166 @@ input, textarea, select, button {
     background: var(--primary-color);
     color: #F2F2F2;
 }
+
+/* Stats */
+.stats {
+    margin-top: 130px;
+    background: #FFF6ED;
+    padding: 86px 0;
+}
+
+.stats__heading {
+    text-align: center;
+}
+
+.stats__desc {
+    margin: 15px auto 0 auto;
+    text-align: center;
+    width: 709px;
+}
+
+.stats__switch-wrap {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+
+.stats__switch-inner {
+    position: relative;
+}
+
+.stats__switch-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 276px;
+    height: 56px;
+    padding: 0 40px;
+    user-select: none;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    cursor: pointer;
+}
+
+.stats__switch-label::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 147px;
+    height: 100%;
+    border-radius: inherit;
+    background: #FF5B2E;
+}
+
+.stats__switch-value {
+    position: relative;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    z-index: 1;
+}
+
+.stats__switch-input:checked + .stats__switch-label::before {
+    left: auto;
+    right: 0;
+    width: 131px;
+}
+
+.stats__switch-input:checked + .stats__switch-label .stats__switch-value:nth-of-type(1) {
+    color: var(--primary-color);
+}
+
+.stats__switch-input:not(:checked) + .stats__switch-label .stats__switch-value:nth-of-type(2) {
+    color: var(--primary-color);
+}
+
+.stats__sales-off {
+    position: absolute;
+    top: -15px;
+    right: -110px;
+}
+
+.stats__list {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 45px;
+}
+
+.stats-item {
+    padding: 30px 0 43px 30px;
+    width: 302px;
+    border-radius: 20px;
+    background: #FFF;
+}
+
+.stats-item__package {
+    color: #FF5B2E;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.stats-item__title {
+    margin-top: 10px;
+    color: #3F4065;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.stats-item__price {
+    margin-top: 24px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1; 
+}
+
+.stats-item__cta {
+    margin-top: 24px;
+    width: 246px;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    background: transparent;
+    color: var(--primary-color);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.stats-item__cta:hover {
+    background: var(--primary-color);
+    color: #FFF;
+}
+
+.stats-item__list {
+    margin-top: 24px;
+}
+
+.stats-item__item {
+    display: flex;
+    margin-top: 18px;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.stats-item__item::before {
+    content: url(../icon/Check.svg);
+    margin-right: 14px;
+}
