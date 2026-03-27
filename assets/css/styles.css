@@ -940,6 +940,10 @@ input, textarea, select, button {
     background: #FFF;
 }
 
+.stats-item__active {
+    box-shadow: 0 20px 44px 0 rgba(195, 108, 22, 0.06);
+}
+
 .stats-item__package {
     color: #FF5B2E;
     font-family: Poppins;
@@ -1003,4 +1007,236 @@ input, textarea, select, button {
 .stats-item__item::before {
     content: url(../icon/Check.svg);
     margin-right: 14px;
+}
+
+/* Reviews */
+.reviews {
+    padding: 105px 0 55px;
+}
+
+.reviews__inner {
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+}
+
+.reviews__control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    background: transparent;
+    color: var(--primary-color);
+    border-radius: 50%;
+    border: 1.5px solid #FFD1C4;
+    flex-shrink: 0;
+    cursor: pointer;
+}
+
+.reviews__control:hover {
+    background: var(--primary-color);
+    color: #FFF;
+    border-color: var(--primary-color);
+}
+
+.reviews__control:nth-of-type(2) {
+    margin-left: auto;
+}
+
+.review__content {
+    overflow: hidden;
+}
+
+.reviews__list {
+    display: flex;
+}
+
+.reviews-item {
+    display: flex;
+    align-items: center;
+    column-gap: 115px;
+    flex-shrink: 0;
+    width: 100%;
+}
+
+.reviews-item__media {
+    margin-top: -50px;
+    position: relative;
+    width: 275px;
+    flex-shrink: 0;
+    border-radius: 137px;
+}
+
+.reviews-item__media::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 80%;
+    background: #FFDA54;
+    border-radius: inherit;
+}
+
+.reviews-item__content {
+    margin-top: 28px;
+}
+
+.reviews-item__img {
+    position: relative;
+    display: block;
+    width: 100%;
+    border-radius: inherit;
+    z-index: 1;
+}
+
+.reviews-item__quote {
+    margin-top: 24px;
+    width: 553px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.56; 
+}
+
+.reviews-item__author {
+    display: flex;
+    align-items: center;
+    margin-top: 34px;
+    color: #282828;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.reviews-item__author::before {
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 2px;
+    margin-right: 10px;
+    background: #000;
+    border-radius: 99px;
+}
+
+.reviews__dots {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.reviews__dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+}
+
+.reviews__dot:hover {
+    background: var(--primary-color);
+}
+
+.reviews__dot--active {
+    width: 24px;
+    background: var(--primary-color);
+}
+
+/* Blog */
+.blog {
+    margin-top: 95px;
+}
+
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__info {
+    margin-right: 74px;
+}
+
+.blog__desc {
+    margin-top: 0;
+    width: 350px;
+}
+
+.blog__cta {
+    margin-top: 24px;
+    width: 180px;
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+}
+
+.blog__cta:hover {
+    color: #fffaf5;
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.blog__list {
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+
+.blog-item__img-wrap {
+    padding: 24px 0 0 36px;
+    border-radius: 24px;
+    background: #90CCFF;
+}
+
+.blog-item:nth-of-type(2) .blog-item__img-wrap {
+    background: #FF997E;
+}
+
+.blog-item:nth-of-type(3) .blog-item__img-wrap {
+    background: #5BD6E2;
+}
+
+.blog-item__time {
+    color: #FFF;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.blog-item__img {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    height: 296px;
+    object-fit: cover;
+}
+
+.blog-item__info {
+    padding: 28px 5px 0 0;
+}
+
+.blog-item__title {
+    display: block;
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.55;
+}
+
+.blog-item__desc {
+    margin-top: 16px;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.7;
 }
