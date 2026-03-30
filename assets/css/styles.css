@@ -1240,3 +1240,136 @@ input, textarea, select, button {
     font-weight: 400;
     line-height: 1.7;
 }
+
+/* Footer */
+.footer {
+    margin-top: 130px;
+    background: linear-gradient(to right, #FFF6ED 43%, #FFFAF5 42%);
+}
+
+.footer__inner {
+    display: flex;
+}
+
+.footer__left {
+    width: 42%;
+    padding: 114px 0 148px;
+}
+
+.footer__right {
+    flex: 1;
+    padding: 52px 0 48px 0;
+}
+
+.subscribe-form {
+    margin: 40px 0 68px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 268px;
+    height: 46px;
+    border-radius: 23px;
+    border: 1px solid rgba(255, 91, 46, 0.25);
+    background: #FFF;
+}
+
+.subscribe-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 0 22px;
+    border: none;
+    outline: none;
+    border-radius: inherit;
+}
+
+.subscribe-form__input::placeholder {
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 300;
+    line-height: 1.16;
+    opacity: 0.8;
+}
+
+.subscribe-form__submit {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    margin-right: -1px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: 0px 15px 28px -7px rgba(255, 91, 46, 0.3);
+    border: none;
+    outline: none;
+}
+
+.subscribe-form__submit:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.footer-heading {
+    color: #000958;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.11;
+}
+
+.social__list {
+    margin-top: 16px;
+    display: flex;
+    column-gap: 16px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #FFF;
+}
+
+.social-item:hover {
+    opacity: 0.9;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 130px;
+    gap: 58px 137px;
+}
+
+.footer__list {
+    margin-top: 14px;
+}
+
+.footer__link {
+    margin-top: 10px;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__copy-right {
+    margin-top: 52px;
+    color: #656689;
+    font-family: Poppins;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.16;
+    opacity: 0.5;
+}
